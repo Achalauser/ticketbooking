@@ -1,0 +1,1280 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(20, 28, 58, 0.7),transparent),url(./turth.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    z-index: 2;
+}
+
+header.fixed{
+    position: fixed;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) ;
+}
+
+header.scrolled{
+    background-color:rgba(20, 28, 58, 0.7) ;
+}
+
+  
+/*linear-gradient(rgba(20, 28, 58, 0.7),rgba(20, 28, 58, 0.7))*/
+/*linear-gradient(rgba(1, 9, 41, 0.7),rgba(1, 9, 41, 0.7))*/
+    
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+nav img{
+    width: 150px;
+    
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* Dropdown Styles */
+.nav-links ul li.dropdown {
+    position: relative;
+}
+
+.nav-links ul li.dropdown .dropbtn {
+    cursor: pointer;
+}
+
+.nav-links ul li.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 0;
+}
+
+.nav-links ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-links ul li.dropdown .dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-links ul li.dropdown .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left: 5%;
+    text-align: left; 
+   
+   
+    
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 17px;
+    color: #fff;
+}
+.explorebtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    top:590px;
+    left: 47%;
+  
+   
+    
+}
+
+
+
+
+.explorebtn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    transition: 1s;
+    color: #000;
+}
+
+#close{
+    display: none;
+}
+#menu{
+    display: none;
+    cursor: pointer;
+ }
+
+ 
+
+ 
+
+
+
+
+
+
+
+@media(max-width:1250px){
+    .text-box h1{
+        font-size: 50px;
+     
+    }
+
+    .text-box{
+        top: 40%;
+
+    }
+
+
+    
+    .nav-links ul li{
+        
+       display: block;
+       padding-bottom: 5px;
+       margin: 30px;
+       overflow: hidden;
+       z-index: 2;
+     
+
+      
+       
+       
+       
+    }
+    
+    .nav-links{
+        position: absolute;
+        background-color:#000;
+        height: 100vh;
+        width: 100%;
+        top:0;
+        right: 100%;
+        text-align: center;
+        z-index: 2;
+       
+        padding-top: 60px;
+        overflow: hidden;
+       }
+    
+       
+
+    .nav-links ul{
+        padding: 30px;
+
+    }
+    .nav-links .dropdown{
+        padding-bottom: 90px;
+    }
+   
+  
+    .nav-links .dropdown-content {
+          position: relative;
+          display: none;
+    
+          
+        }
+      
+    .nav-links .dropdown:hover .dropdown-content {
+          display: block;
+
+          
+        }
+      
+    .nav-links .dropdown-content ul {
+          padding-left: 20px;
+   
+        }
+      
+    .nav-links .dropdown-content li {
+          display: block;
+  
+        }
+        
+    .nav-links .dropdown-content a {
+        display: block;
+        padding: 8px 0;
+        text-decoration: none;
+        color: #fff;
+       
+       
+        }
+      
+        /* Additional styles specific to smaller screens */
+      
+      
+    
+
+
+
+   
+       .explorebtn{
+        left: 45%;
+       }
+       
+
+    #close{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 27px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    #menu{
+        display: inline-block;
+        color: #fff;
+       
+    }
+    #menu span{
+      font-size: 50px;
+    }
+  
+  
+
+    
+
+}
+
+
+/*-----intro-----*/
+
+
+.intro{
+    
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+    
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+@media(max-width:1250px){
+    .row{
+        flex-direction: column;
+    }
+}
+    
+
+.factcol{
+    flex-basis: 31%;
+    background: #caeced;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+/*css for types*/
+
+.types{
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+    
+}
+
+.turtlelist{
+    display: inline-block;
+    text-align: left;
+}
+
+.types ol {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+@media(max-width:450px){
+  
+    .gallery{
+        flex-direction: column;
+        margin: auto;
+    }
+  
+    
+   
+    .container{
+        height: 100%;
+    }
+    .findbtn{
+        margin-top: 2%;
+    }
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.img-box{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(./lhead.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+
+}
+.img-box:nth-child(2){
+    background: url(./olivet.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(3){
+    background: url(./lback.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(4){
+    background: url(./gt.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(5){
+    background: url(./hawk.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box h3{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.img-box:hover{
+    width: 300px;
+    cursor: pointer;
+}
+.img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+
+}
+
+.findbtn{
+    display: inline-block;
+    text-decoration: underline;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    background-color: #000;
+    
+   
+    
+}
+
+
+/*Destination css*/
+.dest{
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+    
+}
+.destlist{
+    display: inline-block;
+    text-align: left;
+}
+.dest ul {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.destcol{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    
+   
+}
+
+.destcol img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.destcol h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+/*Call to Action*/
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url(./cta.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom:40px;
+    padding: 0;
+}
+.ctabtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    
+    
+   
+    
+}
+
+.ctabtn:hover{
+    background: #fff;
+    color: #000;
+    transition: 1s;
+}
+
+/*footer*/
+
+.footersec{
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    
+    box-sizing:border-box ;
+    
+}
+
+.footerrow{
+    display: flex;
+    
+}
+footersec p{
+    
+    margin-top: 5%;
+}
+
+.footersec .col1{
+    text-align: left;
+
+}
+.footersec .col2{
+    text-align: center;
+
+}
+.footersec .col3{
+    text-align: center;
+
+}
+.col1{
+    text-align: left;
+}
+
+.col2{
+    flex-grow: 2;
+    
+}
+
+.footersec div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+
+
+form input{
+    width: 300px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.social_icons{
+    margin-top: 30px;
+}
+
+.social_icons img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footersec div a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #fff;
+}
+@media(max-width:1250px){
+    .footerrow {
+        flex-direction: column;
+    }
+    .footerrow .col1{
+        text-align: center;
+    }
+    .col1{
+        margin-bottom: 40px;
+        
+    }
+    .col2{
+        margin-bottom: 100px;
+        
+    }
+  
+}
+
+/*--------About us page--------*/
+
+.subheader{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(20, 28, 58, 0.7),transparent),url(./abtheader.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.subheader h1{
+    padding-top: 15%;
+}
+
+.about-us{
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+}
+.conserve{
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+}
+.volunteer{
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+}
+
+
+
+
+
+/*-------Turtle categories page----*/
+
+.subheader2{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(20, 28, 58, 0.7),transparent), url(./turt.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.subheader2 h1{
+    padding-top: 15%;
+}
+
+
+.categories{
+    
+    width: 80%;
+    margin: 5%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    padding: 5%;
+}
+.catcol{
+    flex-basis: 48%;
+    padding:  2px;
+
+}
+.catcol img{
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 10px;
+    
+}
+
+.catcol h2{
+    padding-top: 0;
+    text-align: center;
+    
+}
+.catcol p{
+    padding: 15px 0;
+}
+
+
+.catcol iframe{
+
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+.row1{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+}
+
+
+
+@media(max-width:1250px){
+    .table{
+        width: 100%;
+    }
+    #tablesummary{
+        width: 100%;
+    }
+    .row1{
+        flex-direction: column;
+    }
+}
+
+.table{
+  
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin-bottom: 5%;
+    text-align: center;
+    border-radius: 10px;
+    
+ 
+}
+#tablesummary{
+    
+    border-collapse: collapse;
+
+    
+    
+}
+
+#tablesummary th, #tablesummary td{
+    border: 5px solid #fff;
+    padding: 8px;
+    
+}
+#tablelist{
+    margin: 15px;
+}
+#tablesummary{
+    padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0a659a;
+  color: white;
+}
+.reference{
+    text-align: center;
+}
+.reference a{
+    text-decoration: none;
+    color:blue;
+}
+/*-------Hikkaduwa hatchery-------*/
+
+.subheader3{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(20, 28, 58, 0.7),transparent),url(./hwd.jpg);
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.subheader3 h1{
+    padding-top: 15%;
+}
+
+.abt-hkkdwa{
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+}
+.activities{
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    width: 80%;
+}
+.activities h2{
+    margin: 5%;
+}
+
+.activitylist{
+    display: inline-block;
+    text-align: left;
+}
+.activities h2{
+    margin-bottom: 30px;
+}
+.activities ol {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    
+}
+
+.img-gallery{
+    width: 80%;
+    margin: 100px auto  50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+   
+}
+
+
+
+.overview{
+    width: 100%;
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index:2;
+}
+
+.overview img{
+    width: 90%;
+    max-width: 500px;
+
+}
+
+.overview span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.hkkdwaloc{
+    
+    width: 80%;
+    margin: auto;
+   
+    
+    
+    border-radius: 10px;
+  
+}
+.loc{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.loc iframe{
+    width: 100%;
+}
+
+.effort{
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+
+}
+
+/*------Turtle threats-------*/
+
+.subheader4{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(20, 28, 58, 0.7),transparent),url(./threatsheader.jpg);
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+
+.subheader4 h1{
+    
+    padding-top: 15%;
+   
+    
+}
+.threat-intro{
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+}
+.threatlist{
+    display: inline-block;
+    text-align: left;
+}
+
+.threat-intro ul {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.threats{
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+   
+}
+.threatimg{
+   
+    margin-top: 5%;
+    
+}
+.threatimg img{
+    border-radius: 10px;
+    height: 400px;
+    width: 100%;
+    
+}
+.threatfact{
+    border: 3px solid #0a659a;
+    border-radius: 10px;
+}
+.threatfact h3{
+    margin-bottom: 10px;
+}
+.threatrow{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+@media(max-width:1250px){
+    .threatrow a{
+        width: 25px;
+    }
+}
+.threatrow a{
+    border: 1px solid #000;
+    color: #000;
+    padding: 7px;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 20px;
+
+}
+.threatrow a:hover{
+   background-color: #000;
+   color: #fff;
+}
+
+.threatpara{
+    text-align: left;
+}
+.other{
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+    margin-top: 5%;
+}
+.othrhatcheries{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.hatcherybtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    width: 45%;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    margin-top:5%;
+    
+    
+   
+    
+}
+
+.hatcherybtn:hover{
+    background: #0a659a;
+    color: #fff;
+    transition: 1s;
+    border:1px solid #000;
+}
+
+.hatchcol1{
+    text-align: center;
+    
+    flex:2 ;
+ 
+
+}
+
+.hatchcol2{
+    text-align: center;
+   
+    flex:2 ;
+   
+}
+.otherimg{
+    margin: 3%;
+   
+    height: 350px;
+}
+
+.otherimg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+
+/*--Purchase and Donations page----*/
+
+.subheader7{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(20, 28, 58, 0.7),transparent),url(./panddheader.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.subheader7 h1{
+    padding-top: 15%;
+}
+
+.pdintro{
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+
+}
+.separationbar{
+    text-align: center;
+    margin-top: 100px;
+    margin-left:10% ;
+    padding-top: 40px;
+    width: 80%;
+    background-color:rgba(20, 28, 58, 0.7) ;
+}
+.donations{
+    text-align: left;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+    display: flex;
+}
+.donations h2{
+    margin-bottom: 5%;
+}
+@media(max-width:1250px){
+    .donations{
+        flex-direction: column;
+    }
+}
+
+  
+  .options {
+    display: flex;
+    align-items: center;
+  }
+  
+  .options label {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+  
+  .options input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+.options input:hover{
+    cursor: pointer;
+}  
+.otheroptions{
+    align-items: center;
+    margin-top: 2%;
+}
+.pdetails{
+    margin-top: 2%;
+}
+.pdetails input[type=text]{
+    margin-right:15px;
+}
+.pdetails input[type=email]{
+    margin-top:3%;
+    width: 45%;
+}
+.paymentoptions {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  @media(max-width:1250px){
+    
+  }
+    
+  .paymentoptions label {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+  .paymentoptions input:hover{
+    cursor: pointer;
+}  
+.checkoutbtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    width: 33%;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    margin-top:5%;
+    text-align: center;
+    
+    
+   
+    
+}
+
+.checkoutbtn:hover{
+    background: rgba(20, 28, 58, 0.7);
+    color: #fff;
+    transition: 1s;
+    border:1px solid #000;
+}
+.dcol{
+    flex: 1;
+ 
+}
+.dcol2{
+   
+    flex: 1;
+    margin: 2%;
+}
+.dcol2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+   
+}
+
+.merch{
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+}
+
+.products{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.col-1{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-1{
+    width: 100%;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 35px;
+}
+.merch h1{
+    margin-bottom: 2%;
+}
+.col-1 h4{
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+.col-1 h4:hover{
+    background-color: #000;
+    color: #fff;
+    
+}
+
+.ticketbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the button takes full vertical height */
+}
+
+.ticketbutton a {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.ticketbutton a:hover {
+    background-color: #333;
+}
+
