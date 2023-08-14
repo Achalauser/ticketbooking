@@ -1,0 +1,322 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .ticket-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Added to use flexbox layout */
+  }
+  .coverpage {
+    background-color: #245f38;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .cover-page {
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Added to take the full width */
+    flex: 1;
+    padding: 20px;
+    margin-right: 8px;
+  }
+  
+  .cover-page h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .section {
+    margin: 20px 0;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .calendar label,
+  .guests h2,
+  .duration label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  .calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .calendar input {
+    font-size: 18px;
+    padding: 8px;
+    border: 2px solid #ccc;
+  }
+  
+  .guests,
+  .duration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .ticket-category {
+    margin: 10px 0;
+    flex: 0 1 calc(33.33% - 10px);
+  }
+  
+  .ticket-category label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .ticket-category input {
+    font-size: 18px;
+    padding: 8px;
+    width: 100%;
+    border: 2px solid #ccc;
+  }
+  
+  .table-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between; /* Added to position the summary table on the right */
+  }
+  
+  .summary-table {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .summary-table h2 {
+    margin-bottom: 10px;
+    color: #28a745;
+  }
+  
+  .summary-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  .summary-table th,
+  .summary-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .summary-table th {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .summary-table td {
+    font-size: 18px;
+  }
+  
+  .continue-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .continue-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  .cover-page {
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex; /* Added to use flexbox layout */
+    flex-wrap: wrap; /* Added to wrap items if they exceed container width */
+    justify-content: center; /* Added to center the content horizontally */
+  }
+  
+  .cover-page h1 {
+    font-size: 36px;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .calendar,
+  .guests,
+  .duration {
+    margin: 10px;
+    flex: 1 1 300px; /* Added to create a fixed width for each section */
+  }
+  
+  .calendar label,
+  .guests h2,
+  .duration label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .calendar input,
+  .guests input,
+  .duration select {
+    font-size: 18px;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .guests {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .ticket-category {
+    margin: 5px;
+    flex: 1 1 150px; /* Added to create a fixed width for each ticket category */
+  }
+  
+  .ticket-category label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .ticket-category input {
+    font-size: 18px;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .duration select {
+    font-size: 18px;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .continue-btn {
+    background-color: #fff;
+    color: #28a745;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #28a745;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .continue-btn:disabled {
+    background-color: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+  }
+  
+  .continue-btn:hover:not([disabled]) {
+    background-color: #28a745;
+    color: #fff;
+  }
+/* Styles for the coverpage */
+.coverpage {
+    background-color: #2ecc71;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Styles for the calendar */
+  .calendar {
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the guests section */
+  .guests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .ticket-category {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* Styles for the continue button */
+  .continue-btn {
+    margin-top: 20px;
+  }
+    
+  .pricing{
+    background-color: #c6ecc6;
+    padding: 20px;
+    margin-left: 10px;
+    padding:7px;
+   }
+
+ /* Styling for the pricing list */
+.pricing {
+  background-color: #f0f9f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.pricing ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing li {
+  padding: 10px 0;
+  border-bottom: 1px solid #d4e7d4;
+  color: #004400; /* Set the color for normal hour pricing */
+}
+
+.pricing li:nth-child(even) {
+  color: #007700; /* Set the color for peak hour pricing */
+}
+
+/* Style for the pricing list items */
+.pricing li::before {
+  content: "\2022"; /* Bullet point character */
+  font-size: 10px;
+  margin-right: 10px;
+  color: #009900; /* Set the color for the bullet point */
+}
+@media(max-width:768px){
+  .ticket-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media(max-width:480px){
+  .ticket-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
